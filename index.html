@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wij Zijn In Verwachting!</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #fbd3e9, #bbd2ff);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            color: #333;
+        }
+
+        .card {
+            background: white;
+            padding: 50px 40px;
+            border-radius: 25px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+            max-width: 600px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        h1 {
+            font-size: 2.8em;
+            margin-bottom: 10px;
+            background: linear-gradient(90deg, #ff7eb3, #7ea7ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        h2 {
+            font-weight: 400;
+            margin-top: 0;
+            color: #666;
+        }
+
+        .heart {
+            font-size: 3em;
+            animation: pulse 1.5s infinite;
+            margin: 20px 0;
+        }
+
+        .message {
+            font-size: 1.2em;
+            margin-top: 20px;
+            line-height: 1.6;
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #999;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .baby-icon {
+            font-size: 2.5em;
+            margin-top: 15px;
+        }
+
+        button {
+            margin-top: 25px;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 30px;
+            background: linear-gradient(90deg, #ff7eb3, #7ea7ff);
+            color: white;
+            font-size: 1em;
+            cursor: pointer;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="heart">❤️</div>
+        <h1>Duncan & Veerle</h1>
+        <h2>Zijn in verwachting!</h2>
+        <div class="baby-icon">👶✨</div>
+        <p class="message">
+            Met ontzettend veel liefde en blijdschap delen wij dat ons gezin groeit.<br>
+            Een klein wondertje is onderweg en wij kunnen niet wachten om dit nieuwe avontuur te beginnen.
+        </p>
+        <button onclick="showMessage()">Klik voor een verrassing</button>
+        <p class="footer">Coming soon... 💕</p>
+    </div>
+
+    <script>
+        function showMessage() {
+            alert('Baby on the way! 🍼💖');
+        }
+    </script>
+</body>
+</html>
